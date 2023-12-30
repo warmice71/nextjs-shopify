@@ -1,0 +1,85 @@
+{
+  "name": "nextjs-shopify",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "analyze": "BUNDLE_ANALYZE=both yarn build",
+    "find:unused": "next-unused",
+    "prettier": "prettier"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "next-unused": {
+    "alias": {
+      "@lib/*": [
+        "lib/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ]
+    },
+    "debug": true,
+    "include": [
+      "components",
+      "lib",
+      "pages",
+      "sections"
+    ],
+    "exclude": [],
+    "entrypoints": [
+      "pages"
+    ]
+  },
+  "dependencies": {
+    "@builder.io/react": "^3.1.1",
+    "@builder.io/utils": "1.1.10",
+    "@builder.io/widgets": "1.2.24",
+    "@emotion/react": "^11.10.6",
+    "@netlify/plugin-nextjs": "4.30.4",
+    "@radix-ui/react-dialog": "^1.0.2",
+    "@reach/dialog": "^0.18.0",
+    "@reach/portal": "0.14.0",
+    "@theme-ui/components": "0.15.5",
+    "@theme-ui/match-media": "0.15.5",
+    "@theme-ui/preset-base": "0.15.5",
+    "@theme-ui/presets": "0.15.5",
+    "@types/shopify-buy": "2.10.3",
+    "@types/traverse": "0.6.32",
+    "cheerio": "1.0.0-rc.12",
+    "js-cookie": "3.0.1",
+    "next": "13.1.6",
+    "next-seo": "5.15.0",
+    "pure-react-carousel": "^1.30.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-spring": "^9.6.1",
+    "shopify-buy": "^2.16.1",
+    "theme-ui": "0.15.5",
+    "traverse": "0.6.7"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "13.1.6",
+    "@types/js-cookie": "3.0.3",
+    "@types/node": "18.14.0",
+    "@types/react": "18.0.28",
+    "jest": "29.4.3",
+    "next-unused": "0.0.6",
+    "postcss-flexbugs-fixes": "5.0.2",
+    "prettier": "2.8.4",
+    "typescript": "4.9.5"
+  },
+  "license": "MIT"
+}
